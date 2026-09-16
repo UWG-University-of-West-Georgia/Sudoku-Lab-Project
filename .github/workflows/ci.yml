@@ -18,5 +18,10 @@ jobs:
         with:
           java-version: '17'
           distribution: 'temurin'
+          cache: 'maven'
       - name: Run Maven Verify
-        run: mvn -B clean verify
+        run: |
+          echo Testing Project
+          cd "code/Grocery List JavaFX Sample/"
+          mvn --batch-mode --update-snapshots clean verify
+          cd ../..
