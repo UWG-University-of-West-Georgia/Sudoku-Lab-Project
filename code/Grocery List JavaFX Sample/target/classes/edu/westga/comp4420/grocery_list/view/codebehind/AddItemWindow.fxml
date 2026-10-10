@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-
-<?import javafx.scene.layout.AnchorPane?>
-
-
-<AnchorPane fx:id="guiPane" minHeight="99.0" minWidth="160.0" prefHeight="380.0" prefWidth="286.0" xmlns="http://javafx.com/javafx/23" xmlns:fx="http://javafx.com/fxml/1" fx:controller="edu.westga.comp4420.grocery_list.view.codebehind.AddItemWindow" />
