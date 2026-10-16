@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Comp 4420 Cell Validation Feature</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Project 3 Starter for Comp 4420 University of West Georgia Fall 2026">
+    <meta name="author" content="Comp 4420">
+    <!-- Bootstrap CSS Reset -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+ <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark px-4">
+        <a class="navbar-brand" href="/">Sudoku Project</a>
+        <div class="collapse navbar-collapse">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="/">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" href="/documentation">Documentation</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/quickstart">Quickstart</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+ <!-- Content -->
+    <div class="container text-center my-5">
+        <h1>Sudoku Lab Cell Validation Feature</h1>
+        <p class="lead">The cell validation feature checks the validity of each cell in the Sudoku board. It ensures that the numbers entered by the user adhere to Sudoku rules, preventing duplicates in rows, columns, and 3x3 subgrids.</p>
+    </div>
+
+    <section class="container text-center mt-4">
+        <h2>Cell Validation Feature Overview</h2>
+        <p>The cell validation feature provides real-time feedback to users as they input numbers into the Sudoku board. It highlights invalid entries and guides users towards correct solutions.</p>
+        <p>When a user enters a number, the application checks if the number is correct. If the entry is correct, the cell is highlighted in green. If the entry is incorrect, the cell is marked in red and the user loses a life.</p>
+        
+        <div class="my-4">
+            <img src="/images/green_cell.png" class="img-fluid rounded shadow mb-4" alt="Cell Validation Feature Screenshot" style="max-width: 600px;">
+        </div>
+        
+        <p>As shown above, the green cell indicates that the entry is correct and valid.</p>
+        <p>When an invalid number is entered, the cell turns red and the player loses one of their available lives.</p>
+        
+        <div class="my-4">
+            <img src="/images/red_cell.png" class="img-fluid rounded shadow mb-4" alt="Cell Validation Feature Screenshot" style="max-width: 600px;">
+        </div>
+    </section>
+ 
+    <!-- Bootstrap core JavaScript -->
+    <script src="/js/jquery.min.js"></script>
+    <script src="/js/bootstrap.min.js"></script>
+</body>
+</html>
